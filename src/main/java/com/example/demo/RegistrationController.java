@@ -24,4 +24,9 @@ public class RegistrationController {
     public Registration addRegistration(@RequestBody Registration registration) {
         return registrationService.addRegistration(registration);
     }
+    
+    @GetMapping("/message")
+    public String getMessage() {
+        return "Advanced Python Workshop";
+    }
 }
